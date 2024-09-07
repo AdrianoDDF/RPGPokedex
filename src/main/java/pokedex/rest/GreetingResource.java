@@ -1,4 +1,4 @@
-package pokedex;
+package pokedex.rest;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

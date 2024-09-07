@@ -1,4 +1,4 @@
-package pokedex;
+package pokedex.rest;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 
