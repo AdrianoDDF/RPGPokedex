@@ -16,7 +16,7 @@ import jakarta.persistence.Table;
 )})
  
 @Entity
-@IdClass(value = String.class)
+@IdClass(value = TabelaTesteId.class)
 @Table(name = "tabelaTeste", schema = "teste")
 @ApplicationScoped
 public class TabelaTeste {
@@ -27,5 +27,5 @@ public class TabelaTeste {
 
     @Id
     @Column(name = "texto")
-    private Long texto;
+    private String texto;
 }

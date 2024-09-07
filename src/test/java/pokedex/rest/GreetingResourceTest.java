@@ -1,13 +1,21 @@
+
 package pokedex.rest;
 
-import io.quarkus.test.junit.QuarkusTest;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.is;
+public class GreetingResourceTest {
+    
+    @Test
+    public void testHello() {
+        GreetingResource greetingResource = new GreetingResource();
+        String response = greetingResource.hello();
+        assertEquals("Nhaaaaa pokemon", response);
+    }
+}
 
-@QuarkusTest
-class GreetingResourceTest {
+// @QuarkusTest
+// class GreetingResourceTest {
     // @Test
     // void testHelloEndpoint() {
     //     given()
@@ -17,4 +25,4 @@ class GreetingResourceTest {
     //          .body(is("Nhaaaaa pokemongit"));
     // }
 
-}
+// }
