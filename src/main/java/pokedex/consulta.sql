@@ -1,1 +1,0 @@
-select texto from teste.tabelaTeste;

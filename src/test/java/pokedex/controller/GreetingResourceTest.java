@@ -1,8 +1,10 @@
 
-package pokedex.rest;
+package pokedex.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
+
+import pokedex.controller.GreetingResource;
 
 public class GreetingResourceTest {
     
